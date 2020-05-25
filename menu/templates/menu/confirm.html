@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+{% extends 'menu/base.html' %}
+
+{% block content %}
+<div class= "container text-center">
+<h1 style="color:Green;text-align:center;font-family:cursive;">Confirm Order</h1>
+<h4 style="color:MediumSeaGreen;font-family:courier;" >Item - Qty</h4>
+<b>
+
+<p>{{ Bread.0.item }} - {{ Bread.1 }}</p>
+<p>{{ Poha.0.item }} - {{ Poha.1 }}</p>
+<p>{{ Pao_Bhaji.0.item }}-{{ Pao_Bhaji.1 }}</p>
+<p>{{ Sambhar_Dosa.0.item }}-{{ Sambhar_Dosa.1 }}</p>
+<p>{{ Idli_Sambhar.0.item }} - {{ Idli_Sambhar.1 }}</p>
+<p>{{ Cholle_Bhature.0.item }}-{{ Cholle_Bhature.1 }}</p>
+<p>{{ Dal_Makhni.0.item }}-{{ Dal_Makhni.1 }}</p>
+<p>{{ Paneer_Naan.0.item }}-{{ Paneer_Naan.1 }}</p>
+<p>{{ Special_Pizza.0.item }}-{{ Special_Pizza.1 }}</p>
+
+
+<a href ="{% url 'complete' %}">Confirm</a>
+
+<a href ="{% url 'delete' %}">Delete</a>
+
+</b>
+</div>
+{% endblock %}

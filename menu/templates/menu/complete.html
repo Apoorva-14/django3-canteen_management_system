@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+{% extends 'menu/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<div class= "container text-center">
+<h1 style="color:Green;font-family:courier">Your order is complete!!!!....</h1>
+<img src="{% static 'menu/Complete.jpg' %}">
+<br>
+<h2 style="color:Green;font-family:courier"> Enjoy your meal!....:) </h2>
+<b>
+<a href ="{% url 'menulist' %}">Click here to order again</a>
+</b>
+</div>
+{% endblock %}

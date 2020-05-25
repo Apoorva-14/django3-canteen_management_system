@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+{% extends 'menu/base.html' %}
+
+{% block content %}
+
+{% load static %}
+<br>
+Guest?
+<a href ="{% url 'menulist' %}">Click here to order.</a>
+
+<div class= "container text-center">
+<h2 style="color:Brown;font-family:cursive">Welcome to Appie's Restaurant! ;)</h2>
+<img src="{% static 'menu/Appie2.jpg' %}">
+
+
+<h5 style="color:Brown;font-family:courier", align =right>Timings:-</h5>
+<small><b>
+<p align=right>Breakfast- 10:00 am to 02:00 pm</p>
+<p align=right>Lunch- 02:00 pm to 05:00 pm</p>
+<p align=right>Dinner- 05:00 pm to 08:00 pm</p>
+</b></small>
+
+</div>
+
+
+
+{% endblock %}

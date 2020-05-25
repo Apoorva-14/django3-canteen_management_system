@@ -1,0 +1,12 @@
+from django.contrib import admin
+from .models import Breakfast
+from .models import Lunch
+from .models import Dinner
+from .models import Special
+from .models import Order
+
+admin.site.register(Breakfast)
+admin.site.register(Lunch)
+admin.site.register(Dinner)
+admin.site.register(Special)
+admin.site.register(Order)
