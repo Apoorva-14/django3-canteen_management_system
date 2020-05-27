@@ -97,7 +97,7 @@ def logoutuser(request):
         return redirect('home')
 
 def complete(request):
-    return render(request, 'menu/complete.html')
+        return render(request, 'menu/complete.html')
 
 
 def delete(request):
